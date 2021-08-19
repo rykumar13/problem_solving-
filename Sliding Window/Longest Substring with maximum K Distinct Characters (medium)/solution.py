@@ -1,8 +1,3 @@
-# Example 1:
-# Input: String="araaci", K=2
-# Output: 4
-# Explanation: The longest substring with no more than '2' distinct characters is "araa".
-
 def longest_substring_with_k_distinct(str1, k):
     window_start = 0
     char_count = {}
@@ -21,7 +16,6 @@ def longest_substring_with_k_distinct(str1, k):
                 del char_count[str1[window_start]]
 
             window_start += 1
-
             longest_window_sofar = max(longest_window_sofar, sum(char_count.values()))
 
     return longest_window_sofar
