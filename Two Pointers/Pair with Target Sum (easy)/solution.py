@@ -6,7 +6,7 @@ def pair_with_targetsum(arr, target_sum):
 
     if current_sum == target_sum:
         return [p1, p2]
-    
+
     while current_sum != target_sum:
 
         if current_sum > target_sum:
